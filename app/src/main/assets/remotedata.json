@@ -1,0 +1,172 @@
+[
+  {
+    "type": "banners",
+    "title": "Offers",
+    "data": [
+      {
+        "id": 1,
+        "title": "Banner 1",
+        "imageURL": "https://static.seattletimes.com/wp-content/uploads/2012/07/2018663715-780x0.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Banner 2",
+        "imageURL": "https://review.chinabrands.com/chinabrands/seo/image/20181116/wholesalegroceries.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Banner 3",
+        "imageURL": "https://i.pinimg.com/originals/df/c1/f9/dfc1f9ba2734aa94690f009d721440d7.jpg"
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "title": "List 1",
+    "data": [
+      {
+        "id": 4,
+        "title": "List Item 11",
+        "imageURL": "https://loremflickr.com/150/150",
+        "price": "Rs 200",
+        "weight": "1 kg"
+      },
+      {
+        "id": 5,
+        "title": "List Item 12",
+        "imageURL": "https://loremflickr.com/150/150",
+        "price": "Rs 200",
+        "weight": "500gms"
+      },
+      {
+        "id": 6,
+        "title": "List Item 13",
+        "imageURL": "https://loremflickr.com/150/150",
+        "price": "Rs 200",
+        "weight": "200gms"
+      }
+    ]
+  },
+  {
+    "type": "grid",
+    "span": 3,
+    "title": "Grid 1",
+    "data": [
+      {
+        "id": 7,
+        "title": "Grid Item 11",
+        "imageURL": "https://picsum.photos/280",
+        "description": "",
+        "weight": "1 kg"
+      },
+      {
+        "id": 8,
+        "title": "Grid Item 12",
+        "imageURL": "https://picsum.photos/280",
+        "description": "",
+        "weight": "500gms"
+      },
+      {
+        "id": 9,
+        "title": "Grid Item 13",
+        "imageURL": "https://picsum.photos/280",
+        "description": "",
+        "weight": "200gms"
+      },
+      {
+        "id": 10,
+        "title": "Grid Item 14",
+        "imageURL": "https://picsum.photos/280",
+        "description": "",
+        "weight": "500gms"
+      },
+      {
+        "id": 11,
+        "title": "Grid Item 15",
+        "imageURL": "https://picsum.photos/280",
+        "description": "",
+        "weight": "1kg"
+      },
+      {
+        "id": 12,
+        "title": "Grid Item 16",
+        "imageURL": "https://picsum.photos/280",
+        "description": "",
+        "weight": "250 gms"
+      }
+    ]
+  },
+  {
+    "type": "list",
+    "title": "List 2",
+    "data": [
+      {
+        "id": 13,
+        "title": "List Item 21",
+        "imageURL": "https://picsum.photos/200",
+        "price": "Rs 200",
+        "weight": "1 kg"
+      },
+      {
+        "id": 14,
+        "title": "List Item 22",
+        "imageURL": "https://picsum.photos/200",
+        "price": "Rs 200",
+        "weight": "500gms"
+      },
+      {
+        "id": 15,
+        "title": "List Item 23",
+        "imageURL": "https://picsum.photos/200",
+        "price": "Rs 200",
+        "weight": "200gms"
+      }
+    ]
+  },
+  {
+    "type": "banners",
+    "title": "Discounts",
+    "data": [
+      {
+        "id": 16,
+        "title": "Banner 1",
+        "imageURL": "https://i.pinimg.com/originals/3e/cb/6f/3ecb6f7d6c291345c96db38bdfef544e.jpg"
+      }
+    ]
+  },
+  {
+    "type": "grid",
+    "span": 3,
+    "title": "Grid 2",
+    "data": [
+      {
+        "id": 17,
+        "title": "Grid Item 21",
+        "imageURL": "https://picsum.photos/250",
+        "description": "",
+        "weight": "1 kg"
+      },
+      {
+        "id": 18,
+        "title": "Grid Item 22",
+        "imageURL": "https://picsum.photos/250",
+        "description": "",
+        "weight": "500gms"
+      },
+      {
+        "id": 19,
+        "title": "Grid Item 23",
+        "imageURL": "https://picsum.photos/250",
+        "description": "",
+        "weight": "200gms"
+      },
+      {
+        "id": 20,
+        "title": "Grid Item 24",
+        "imageURL": "https://picsum.photos/250",
+        "description": "",
+        "weight": "500gms"
+      }
+    ]
+  }
+]

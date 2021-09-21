@@ -1,0 +1,62 @@
+<resources>
+
+    <style name="LabelTitle">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textSize">36dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/margin_medium</item>
+        <item name="android:layout_marginBottom">@dimen/margin_medium</item>
+    </style>
+
+    <style name="LabelSection">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginStart">@dimen/margin_large</item>
+        <item name="android:layout_marginTop">@dimen/margin_large</item>
+    </style>
+
+    <style name="LabelGridSection">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="LabelListItemTitle">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">@dimen/margin_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">@dimen/margin_medium</item>
+    </style>
+
+    <style name="LabelListItemSecondary">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:layout_marginTop">@dimen/margin_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">@dimen/margin_medium</item>
+    </style>
+
+    <style name="LabelListItemGreen">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:layout_marginTop">@dimen/margin_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">@dimen/margin_medium</item>
+    </style>
+
+    <style name="LabelListItemRed">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:layout_marginTop">@dimen/margin_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">@dimen/margin_medium</item>
+    </style>
+</resources>

@@ -1,0 +1,79 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.smendon.android.dynamicdashboard"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        dataBinding true
+    }
+}
+
+dependencies {
+    //AndroidX Core & Kotlin & Support Libraries
+    implementation(pluginDependencies.kotlinStdlib)
+    implementation(coreDependencies.androidXCore)
+    implementation(supportDependencies.appCompat)
+
+    //UI
+    implementation(uiDesignDependencies.constraintlayout)
+
+    //Viewmodel, Livedata and Lifecycle
+    implementation(lifecycleDependencies.viewmodel)
+    implementation(lifecycleDependencies.livedata)
+    implementation(lifecycleDependencies.lifecycleExt)
+
+    //Navigation
+    implementation(navigationDependencies.navigationFragment)
+    implementation(navigationDependencies.navigationUi)
+
+    //Glide
+    implementation(glideDependencies.glideLib)
+
+    //Gson
+    implementation(gsonDependencies.gson)
+
+    //Epoxy
+    implementation(epoxyDependencies.epoxy)
+    implementation(epoxyDependencies.epoxyGlide)
+    implementation(epoxyDependencies.epoxyAnnotations)
+    implementation(epoxyDependencies.epoxyDatabinding)
+    kapt(epoxyDependencies.epoxyCompiler)
+
+    //Kodein Dependency Injection
+    implementation(kodeinDependencies.kodeinGeneric)
+    implementation(kodeinDependencies.kodeinFramework)
+
+    //Test
+    testImplementation(testingDependencies.junit)
+    androidTestImplementation(testingDependencies.androidxJunit)
+    androidTestImplementation(testingDependencies.androidxEspresso)
+}
