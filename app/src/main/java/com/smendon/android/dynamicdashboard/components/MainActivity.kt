@@ -1,4 +1,4 @@
-package com.smendon.android.dynamicdashboard
+package com.smendon.android.dynamicdashboard.components
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.smendon.android.dynamicdashboard.R
 
 class MainActivity : AppCompatActivity() {
 
