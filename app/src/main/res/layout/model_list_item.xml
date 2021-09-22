@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -9,116 +10,123 @@
             type="com.smendon.android.dynamicdashboard.models.ui.ItemData" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/cellContainer"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:clickable="true"
-        android:focusable="true">
+        android:layout_margin="@dimen/margin_small"
+        app:cardCornerRadius="@dimen/cardview_default_radius"
+        app:cardElevation="@dimen/cardview_default_elevation">
 
-        <View
-            android:id="@+id/top_line"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cellContainer"
             android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/grey"
-            app:layout_constraintBottom_toTopOf="@+id/ivImage"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_30"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.30" />
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/margin_small">
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/ivImage"
-            imageURL="@{data.imageURL}"
-            android:layout_width="0dp"
-            android:layout_height="120dp"
-            android:layout_margin="@dimen/margin_small"
-            app:layout_constraintEnd_toEndOf="@id/guideline_30"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/top_line" />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.30" />
 
-        <TextView
-            android:id="@+id/tvAddTOList"
-            style="@style/LabelListItemGreen"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/label_add_to_list"
-            app:layout_constraintEnd_toEndOf="@id/guideline_30"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ivImage" />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.65" />
 
-        <TextView
-            android:id="@+id/tvTitle"
-            style="@style/LabelListItemTitle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@{data.title}"
-            app:layout_constraintBottom_toTopOf="@+id/tvMrp"
-            app:layout_constraintLeft_toRightOf="@id/guideline_30"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="Title" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivImage"
+                imageURL="@{data.imageURL}"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="@dimen/margin_small"
+                app:layout_constraintEnd_toEndOf="@id/guideline_30"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/tvMrp"
-            style="@style/LabelListItemSecondary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/label_mrp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvTitle"
-            tools:text="@string/label_mrp" />
+            <TextView
+                android:id="@+id/tvAddTOList"
+                style="@style/LabelListItemGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_add_to_list"
+                app:layout_constraintEnd_toEndOf="@id/guideline_30"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivImage" />
 
-        <TextView
-            android:id="@+id/tvDmartPrice"
-            style="@style/LabelListItemGreen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/label_dmart_price"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvMrp"
-            tools:text="@string/label_dmart_price" />
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/LabelListItemTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{data.title}"
+                app:layout_constraintBottom_toTopOf="@+id/tvMrp"
+                app:layout_constraintLeft_toRightOf="@id/guideline_30"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Title" />
 
-        <TextView
-            android:id="@+id/tvDiscount"
-            style="@style/LabelListItemRed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/label_discount"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvDmartPrice"
-            tools:text="@string/label_discount" />
+            <TextView
+                android:id="@+id/tvMrp"
+                style="@style/LabelListItemSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_mrp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                tools:text="@string/label_mrp" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnQty"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rectangular_bg"
-            android:text="@string/label_quantity"
-            android:textColor="@color/black"
-            app:layout_constraintRight_toLeftOf="@+id/btnAddToCart"
-            app:layout_constraintStart_toStartOf="@id/guideline_30"
-            app:layout_constraintTop_toBottomOf="@id/tvDiscount" />
+            <TextView
+                android:id="@+id/tvDmartPrice"
+                style="@style/LabelListItemGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_dmart_price"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvMrp"
+                tools:text="@string/label_dmart_price" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnAddToCart"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/green"
-            android:text="@string/label_add_to_cart"
-            android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintLeft_toLeftOf="@+id/btnQty"
-            app:layout_constraintTop_toBottomOf="@id/tvDiscount" />
+            <TextView
+                android:id="@+id/tvDiscount"
+                style="@style/LabelListItemRed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/label_discount"
+                app:layout_constraintBottom_toTopOf="@+id/btnAddToCart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDmartPrice"
+                tools:text="@string/label_discount" />
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnQty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:background="@drawable/bg_rectangular_green_stroke"
+                android:text="@string/label_quantity"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/guideline_65"
+                app:layout_constraintStart_toStartOf="@id/guideline_30"
+                app:layout_constraintTop_toBottomOf="@id/tvDiscount" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddToCart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:background="@drawable/bg_rectangular_green_filled"
+                android:text="@string/label_add_to_cart"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline_65"
+                app:layout_constraintTop_toBottomOf="@id/tvDiscount" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
 </layout>

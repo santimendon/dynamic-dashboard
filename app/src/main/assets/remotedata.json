@@ -6,17 +6,17 @@
       {
         "id": 1,
         "title": "Banner 1",
-        "imageURL": "https://static.seattletimes.com/wp-content/uploads/2012/07/2018663715-780x0.jpg"
+        "imageURL": "https://picsum.photos/1500/500"
       },
       {
         "id": 2,
         "title": "Banner 2",
-        "imageURL": "https://review.chinabrands.com/chinabrands/seo/image/20181116/wholesalegroceries.jpg"
+        "imageURL": "https://picsum.photos/1500/400"
       },
       {
         "id": 3,
         "title": "Banner 3",
-        "imageURL": "https://i.pinimg.com/originals/df/c1/f9/dfc1f9ba2734aa94690f009d721440d7.jpg"
+        "imageURL": "https://picsum.photos/500/300"
       }
     ]
   },
@@ -27,23 +27,17 @@
       {
         "id": 4,
         "title": "List Item 11",
-        "imageURL": "https://loremflickr.com/150/150",
-        "price": "Rs 200",
-        "weight": "1 kg"
+        "imageURL": "https://loremflickr.com/150/150"
       },
       {
         "id": 5,
         "title": "List Item 12",
-        "imageURL": "https://loremflickr.com/150/150",
-        "price": "Rs 200",
-        "weight": "500gms"
+        "imageURL": "https://loremflickr.com/150/150"
       },
       {
         "id": 6,
         "title": "List Item 13",
-        "imageURL": "https://loremflickr.com/150/150",
-        "price": "Rs 200",
-        "weight": "200gms"
+        "imageURL": "https://loremflickr.com/150/150"
       }
     ]
   },
@@ -56,43 +50,37 @@
         "id": 7,
         "title": "Grid Item 11",
         "imageURL": "https://picsum.photos/280",
-        "description": "",
-        "weight": "1 kg"
+        "description": ""
       },
       {
         "id": 8,
         "title": "Grid Item 12",
         "imageURL": "https://picsum.photos/280",
-        "description": "",
-        "weight": "500gms"
+        "description": ""
       },
       {
         "id": 9,
         "title": "Grid Item 13",
         "imageURL": "https://picsum.photos/280",
-        "description": "",
-        "weight": "200gms"
+        "description": ""
       },
       {
         "id": 10,
         "title": "Grid Item 14",
         "imageURL": "https://picsum.photos/280",
-        "description": "",
-        "weight": "500gms"
+        "description": ""
       },
       {
         "id": 11,
         "title": "Grid Item 15",
         "imageURL": "https://picsum.photos/280",
-        "description": "",
-        "weight": "1kg"
+        "description": ""
       },
       {
         "id": 12,
         "title": "Grid Item 16",
         "imageURL": "https://picsum.photos/280",
-        "description": "",
-        "weight": "250 gms"
+        "description": ""
       }
     ]
   },
@@ -103,23 +91,17 @@
       {
         "id": 13,
         "title": "List Item 21",
-        "imageURL": "https://picsum.photos/200",
-        "price": "Rs 200",
-        "weight": "1 kg"
+        "imageURL": "https://picsum.photos/200"
       },
       {
         "id": 14,
         "title": "List Item 22",
-        "imageURL": "https://picsum.photos/200",
-        "price": "Rs 200",
-        "weight": "500gms"
+        "imageURL": "https://picsum.photos/200"
       },
       {
         "id": 15,
         "title": "List Item 23",
-        "imageURL": "https://picsum.photos/200",
-        "price": "Rs 200",
-        "weight": "200gms"
+        "imageURL": "https://picsum.photos/200"
       }
     ]
   },
@@ -130,7 +112,7 @@
       {
         "id": 16,
         "title": "Banner 1",
-        "imageURL": "https://i.pinimg.com/originals/3e/cb/6f/3ecb6f7d6c291345c96db38bdfef544e.jpg"
+        "imageURL": "https://picsum.photos/2000/1500"
       }
     ]
   },
@@ -142,30 +124,22 @@
       {
         "id": 17,
         "title": "Grid Item 21",
-        "imageURL": "https://picsum.photos/250",
-        "description": "",
-        "weight": "1 kg"
+        "imageURL": "https://picsum.photos/250"
       },
       {
         "id": 18,
         "title": "Grid Item 22",
-        "imageURL": "https://picsum.photos/250",
-        "description": "",
-        "weight": "500gms"
+        "imageURL": "https://picsum.photos/250"
       },
       {
         "id": 19,
         "title": "Grid Item 23",
-        "imageURL": "https://picsum.photos/250",
-        "description": "",
-        "weight": "200gms"
+        "imageURL": "https://picsum.photos/250"
       },
       {
         "id": 20,
         "title": "Grid Item 24",
-        "imageURL": "https://picsum.photos/250",
-        "description": "",
-        "weight": "500gms"
+        "imageURL": "https://picsum.photos/250"
       }
     ]
   }

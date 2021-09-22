@@ -47,7 +47,7 @@ abstract class GridItemModel() : EpoxyModelWithHolder<GridItemVH>() {
             }
         }
 
-        fun getSpanSize() = GRID_SPAN
+        fun getSpanSize() = if (GRID_SPAN == 0) 3 else GRID_SPAN
     }
 }
 

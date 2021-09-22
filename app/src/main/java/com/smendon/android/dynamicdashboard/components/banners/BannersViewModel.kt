@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class BannersViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This fragment is to display all banners"
+        value = "This fragment displays a Banner"
     }
     val text: LiveData<String> = _text
 }

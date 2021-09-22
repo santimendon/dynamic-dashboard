@@ -12,7 +12,7 @@
             android:id="@+id/epoxy_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#ffffff"
+            android:background="@color/white_tint"
             app:itemSpacing="4dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
     </androidx.constraintlayout.widget.ConstraintLayout>

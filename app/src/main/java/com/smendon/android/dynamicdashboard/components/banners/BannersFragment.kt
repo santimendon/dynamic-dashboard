@@ -43,8 +43,7 @@ class BannersFragment : Fragment() {
             binding.textTitle.text = it
         })
 
-        val url =
-            "https://c8.alamy.com/comp/W194YN/sample-ribbon-sample-isolated-sign-sample-banner-W194YN.jpg"
+        val url = "https://picsum.photos/2000/1000"
         binding.imageBanner.setImageURL(url)
     }
 }

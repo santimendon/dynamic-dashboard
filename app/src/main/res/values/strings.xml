@@ -2,6 +2,7 @@
     <string name="app_name">Dynamic Dashboard</string>
     <string name="title_banner">Banners</string>
     <string name="title_dashboard">Dashboard</string>
+    <string name="label_welcome">Welcome Nitish</string>
     <string name="label_add_to_cart">ADD TO CART</string>
     <string name="label_mrp">MRP \u20B9 137.00</string>
     <string name="label_dmart_price">DMart \u20B9 105.00</string>

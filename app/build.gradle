@@ -45,6 +45,7 @@ dependencies {
 
     //UI
     implementation(uiDesignDependencies.constraintlayout)
+    implementation(uiDesignDependencies.cardView)
 
     //Viewmodel, Livedata and Lifecycle
     implementation(lifecycleDependencies.viewmodel)

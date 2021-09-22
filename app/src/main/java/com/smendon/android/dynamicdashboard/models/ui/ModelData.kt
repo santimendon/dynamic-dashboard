@@ -14,9 +14,7 @@ data class ItemData(
     val id: Int? = 0,
     val title: String? = null,
     val description: String? = null,
-    val imageURL: String? = null,
-    val price: String? = null,
-    val weight: String? = null
+    val imageURL: String? = null
 ) : BaseCell()
 
 data class GridItemData(

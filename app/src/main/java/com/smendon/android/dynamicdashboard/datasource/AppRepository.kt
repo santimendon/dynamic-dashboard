@@ -1,15 +1,16 @@
 package com.smendon.android.dynamicdashboard.datasource
 
 import android.content.Context
-import android.util.Log
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import com.smendon.android.dynamicdashboard.R
 import com.smendon.android.dynamicdashboard.models.remote.RemoteData
-import com.smendon.android.dynamicdashboard.models.ui.BannerData
-import com.smendon.android.dynamicdashboard.models.ui.BaseCell
-import com.smendon.android.dynamicdashboard.models.ui.GridItemData
-import com.smendon.android.dynamicdashboard.models.ui.SectionTitleData
+import com.smendon.android.dynamicdashboard.models.ui.*
 import java.io.IOException
+
+const val TYPE_BANNER = "banners"
+const val TYPE_LIST = "list"
+const val TYPE_GRID = "grid"
 
 class AppRepository(
     context: Context
@@ -18,16 +19,12 @@ class AppRepository(
 
     fun provideData(): List<BaseCell> {
         val dataList = mutableListOf<BaseCell>()
-        try {
-            val remoteData = appContext.assets.open("remotedata.json")
-                .bufferedReader().use { it.readText() }
-            val gson = Gson()
-            val remoteObjType = object : TypeToken<RemoteData>() {}.type
-            val data: RemoteData = gson.fromJson(remoteData, remoteObjType)
+        val remoteData = getMockData()
+        dataList.add(TitleData(appContext.getString(R.string.label_welcome)))
 
-            data.forEach { item ->
-                if (item.type == "banners") {
-                    Log.d("TAG", "Banners: " + item.data.size)
+        remoteData?.forEach { item ->
+            when (item.type) {
+                TYPE_BANNER -> {
                     dataList.add(SectionTitleData(item.title))
                     item.data.forEach {
                         dataList.add(
@@ -36,19 +33,32 @@ class AppRepository(
                             )
                         )
                     }
-                } else if (item.type == "list") {
+                }
+                TYPE_LIST -> {
                     dataList.add(SectionTitleData(item.title))
                     item.data.forEach {
                         dataList.add(it)
                     }
-                } else if (item.type == "grid") {
+                }
+                TYPE_GRID -> {
                     dataList.add(SectionTitleData(item.title))
                     dataList.add(GridItemData(span = item.span, item.data))
                 }
             }
+        }
+        return dataList
+    }
+
+    private fun getMockData(): RemoteData? {
+        try {
+            val remoteJson = appContext.assets.open("remotedata.json")
+                .bufferedReader().use { it.readText() }
+            val gson = Gson()
+            val remoteObjType = object : TypeToken<RemoteData>() {}.type
+            return gson.fromJson(remoteJson, remoteObjType)
         } catch (ioException: IOException) {
             ioException.printStackTrace()
         }
-        return dataList
+        return null
     }
 }

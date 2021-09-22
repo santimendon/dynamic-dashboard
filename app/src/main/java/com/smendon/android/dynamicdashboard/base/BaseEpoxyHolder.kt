@@ -21,7 +21,6 @@ abstract class BaseEpoxyHolder : EpoxyHolder() {
         }
 
     /**
-     * Taken from Kotterknife.
      * https://github.com/JakeWharton/kotterknife
      */
     private class Lazy<V>(
